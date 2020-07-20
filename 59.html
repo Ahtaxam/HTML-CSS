@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script>
+			// validation in jvascript
+			function valid()
+			{
+			var a = document.myform.t1.value;
+			var r =  /^[A-Za-z] + $/;
+			
+			if(a.match(r))
+			{
+				alert("Value okay");
+				return true;
+			}
+
+			else
+			{
+				alert("Value not okay");
+				return false;
+			}
+
+
+
+			// if (a == " ")
+			// {
+			// 	alert("Enter value in text box");
+			// }
+		
+
+			// else if(isNaN(a)) // NaN = not a number
+			// {
+			// 	alert("Enter number only"); 
+			// }
+
+			// else if (a.length == 10)
+			// {
+			// 	alert("Number okay");
+			// }
+			// else
+			// {
+			// 	alert("Enter 10 digit only");
+			// }
+
+			
+			
+		
+			}
+
+			
+		</script>
+	</head>
+
+	<body>
+		<form name="myform">
+		<input type="text" name= "t1">
+		<button onclick="valid();"> click </button>
+
+
+
+
+		</form>
+
+
+	</body>
+</html>

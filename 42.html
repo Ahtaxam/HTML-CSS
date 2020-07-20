@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<style>
+			body{
+				counter-reset: section;
+			}
+			h2::before{
+				counter-increment: section;
+				content : "secion" counter(section) ": ";
+			}
+		
+		
+		</style>
+	</head>
+	<body>
+		<h1></h1>CSS COUNTER</h1>
+		<h2>body tag</h2>
+		<h2>image tag</h2>
+		<h2>video tag</h3>
+		<h2>audio tag</h2>
+	</body>
+</html>

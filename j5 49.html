@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script>
+			function myfun(a,b) {
+			//document.getElementById("me").innerHTML = "Hello";
+			return a*b;
+				
+			}
+
+			function display() {
+			//	document.write(  myfun(6,6)   );
+			document.getElementById("me").innerHTML = myfun(5,9);
+			}
+			
+			
+		
+		
+		</script>
+	</head>
+	<body>
+		<p id="me"> </p>
+		<button onclick="display();"> click button </button>
+
+	</body>
+</html>

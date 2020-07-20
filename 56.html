@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script>
+			function display()
+			{
+			var u = document.getElementById("us") . value;
+			var p = document.getElementById("pass") . value;
+			if ((u >= "a" && u <= "z" )&& ( p > "0" || p <"100"))
+			{
+				document.write("login correct");
+			}
+			else
+			{
+				document.write("login incorrect");
+			}
+			}
+		</script>
+	</head>
+	<body>
+		username : <input type="text" id="us"> <br>
+		password : <input type="password" id="pass"> <br>
+		<button onclick="display();"> click</button>
+
+	</body>
+</html>

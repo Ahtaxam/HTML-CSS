@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>specificity</title>
+
+		<style>
+			/* body > div {
+				background-color: blueviolet;
+				width: 200px;
+				height: 200px;
+			}
+
+			.example_class{
+				background-color: aqua;
+			}
+
+			#example{
+				background-color: black;
+			} */
+/* id are more specifirer */
+
+			#example p:first-child{
+				background-color:  blueviolet;
+				width: 200px;
+				height: 200px;
+			}
+
+			#example h3{
+				color: greenyellow;
+				
+			}
+/* 
+			#image:hover{
+
+				/* filter:invert(100%); */
+				/* transform: scale(2);
+				 */
+			/* } */
+ */
+
+			#example p+p{
+				background-color: blue;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<section>	
+				<div id="example"  class="example-class"> 
+			<p>hi how are you world whats about you</p>
+			<h3>hello, i'm in h3</h3>
+			<p>nothing to do in this life</p>
+			<p>sibling method</p>
+		</div>
+
+		</section>
+
+<img id="image" src="pic.jpg">
+
+	</body>
+</html>

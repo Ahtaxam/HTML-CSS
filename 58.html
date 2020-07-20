@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script>
+
+			function display()
+			{
+
+			var n_value = document.forms["myform"]["t1"].value; //document.getElementById("t1"). value;
+			document.write (n_value);
+			}
+		
+		
+		</script>
+	</head>
+
+	<body>
+		<form id="myform">
+		Enter name : <input type="text" id="t1"> <br>
+		Select Gender : <input type="radio" name = "r1" id="r" value="male" > male 
+						<input type="radio" name = "r1" id="r" value="female"> female <br>
+
+		Select language :
+		<input type="checkbox" id="c1" value="urdu"> urdu 
+		<input type="checkbox" id="c2" value="english"> english <br>
+		</form>
+
+		<button onclick="display();"> click </button>
+
+</html>
